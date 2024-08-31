@@ -1,0 +1,77 @@
+* {
+    font-family: monospace, monospace;
+}
+
+body > div {
+    margin: 5px auto;
+}
+
+#result {
+    border: 3px solid black;
+    width: 90%;
+    height: 100px;
+    text-align: center;
+    
+    #base10 {
+        font-size: 50px;
+    }
+
+    #base2 {
+        font-size: 20px;
+    }
+}
+
+#container {
+    width: 90%;
+    height: 40px;
+    
+    -webkit-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none;
+
+    & #row1 {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        & div:not(.bitBox) {
+            width: 33%;
+            height: 90%;
+            display: flex;
+            justify-content: space-evenly;
+        }
+    }
+
+    & #row2 {
+        display: flex;
+        justify-content: space-between;
+
+        & div {
+            width: 33%;
+            border: 1px solid black;
+            height: 90%;
+            font-size: 20px;
+            text-align: center;                
+        }        
+    }
+}
+
+.bitBox {
+    display: inline-block;
+    font-size: 30px;
+    width: calc(100%/8);
+    border: 1px solid black;
+    text-align: center;
+}
+
+#op { 
+
+    & div {
+        height: 100%;
+        background-color: #333;
+        color: #DDD;
+        width: 20%;
+        font-size: 30px;
+    }
+}

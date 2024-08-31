@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="startup();">
+    <div id="result">
+        <div id="base10"></div>
+        <div id="base2"></div>
+    </div>
+    <div id="container">
+        <div id="row1">
+            <div id="n1"></div>
+            <div id="op">
+                <div id="andOp" onclick="setOp('&', 0)">And</div>
+                <div id="orOp" onclick="setOp('|', 1)">Or</div>
+                <div id="xorOp" onclick="setOp('^', 2)">Xor</div>
+            </div>
+            <div id="n2"></div>
+        </div>
+        <div id="row2">
+            <div id="n1Base10">0</div>
+            <div id="n2Base10">0</div>
+        </div>
+    </div>
+</body>
+</html>
